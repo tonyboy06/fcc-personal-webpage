@@ -17,7 +17,6 @@ body, html {
     background-color: lightcoral;
     height: 50px;
     padding-right: 50px;
-    justify-content: flex-end;
     position: fixed;
     width: 100%;
     top: 0;
@@ -44,9 +43,10 @@ body, html {
 @media only screen and (max-width: 600px) {
    .nav {
         justify-content: center;
+        align-items: center;
    }
    .nav-list li { 
-    margin-left: 10px;
+        margin-left: 10px;
    }
 }
 
@@ -147,7 +147,8 @@ body, html {
 @media only screen and (max-width: 600px) {
     .contact-link {
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr;
+        gap: 25px 10px;
         justify-items: center;
         
     }
@@ -158,6 +159,12 @@ body, html {
 
     .contact-header {
         margin-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width: 393px) {
+    .contact-link {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
